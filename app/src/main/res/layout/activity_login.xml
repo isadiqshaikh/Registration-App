@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/back"
+    tools:context=".LoginActivity">
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email Address"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:inputType="textWebEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        android:inputType="textVisiblePassword"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textStyle="bold"
+        app:rippleColor="#F44336" />
+
+    <TextView
+        android:id="@+id/resetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password?"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/goToSignUpActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To SignUp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>
